@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>お絵描き</title>
+</head>
+<body>
+    <canvas id="canvas">HTML5に対応していません</canvas>
+    <div class="menu">
+        <div class="menu-list"><img src="./images/brush.svg" id="pencil" /></div>
+        <div class="menu-list"><img src="./images/eraser.svg" id="eraser" /></div>
+        <div class="menu-list"><img src="./images/palette.svg" id="palette" /></div>
+        <div class="menu-list"><img src="./images/trash.svg" id="clear" /></div>
+        <div class="menu-list"><img src="./images/save.svg" id="save" /></div>
+    </div>
+    <ul class="option">
+        <li>
+            <label class="option-label">Color</label>
+            <ul class="option-category">
+                <li class="option-icon color" data-color="f44336" style="background-color:#f44336"></li>
+                <li class="option-icon color" data-color="e91e63" style="background-color:#e91e63"></li>
+                <li class="option-icon color" data-color="673ab7" style="background-color:#673ab7"></li>
+                <li class="option-icon color" data-color="3f51b5" style="background-color:#3f51b5"></li>
+                <li class="option-icon color" data-color="03a9f4" style="background-color:#03a9f4"></li>
+                <li class="option-icon color" data-color="009688" style="background-color:#009688"></li>
+                <li class="option-icon color" data-color="4caf50" style="background-color:#4caf50"></li>
+                <li class="option-icon color" data-color="ffeb3b" style="background-color:#ffeb3b"></li>
+                <li class="option-icon color" data-color="ffc107" style="background-color:#ffc107"></li>
+                <li class="option-icon color" data-color="ff5722" style="background-color:#ff5722"></li>
+                <li class="option-icon color" data-color="795548" style="background-color:#795548"></li>
+                <li class="option-icon color" data-color="9e9e9e" style="background-color:#9e9e9e"></li>
+                <li class="option-icon color" data-color="607d8b" style="background-color:#607d8b"></li>
+                <li class="option-icon color" data-color="000000" style="background-color:#000000"></li>
+            </ul>
+        </li>
+        <li>
+            <label class="option-label">Thickness</label>
+            <ul class="option-category">
+                <li class="option-icon size" data-size="21" style="width:40px;height:40px"></li>
+                <li class="option-icon size" data-size="14" style="width:30px;height:30px"></li>
+                <li class="option-icon size" data-size="7" style="width:20px;height:20px"></li>
+                <li class="option-icon size" data-size="3" style="width:10px;height:10px"></li>
+            </ul>
+        </li>
+        <li>
+            <label class="option-label">Darkness</label>
+            <ul class="option-category">
+                <li class="option-icon alpha" data-alpha="10" style="background-color:rgba(0,0,0,1.0)"></li>
+                <li class="option-icon alpha" data-alpha="6" style="background-color:rgba(0,0,0,0.6)"></li>
+                <li class="option-icon alpha" data-alpha="3" style="background-color:rgba(0,0,0,0.3)"></li>
+                <li class="option-icon alpha" data-alpha="1" style="background-color:rgba(0,0,0,0.1)"></li>
+            </ul>
+        </li>
+    </ul>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
